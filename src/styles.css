@@ -11,7 +11,7 @@ body::after {
   right: 0;
   position: absolute;
   z-index: -1;
-  background-image: url("../desert.jpg");
+  background-image: url("./desert.jpg");
   /* Full height */
   height: 100%;
   /* Center and scale the image nicely */

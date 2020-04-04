@@ -1,6 +1,6 @@
 import React, { useReducer } from "react";
-import lawToken from "../public/lawToken.png";
-import chaosToken from "../public/chaosToken.png";
+import lawToken from "./lawToken.png";
+import chaosToken from "./chaosToken.png";
 import "./puller.css";
 
 const CHANGE_LAW = "CHANGE_LAW";
@@ -15,7 +15,7 @@ const PULLER_ACTIONS = {
   [CHANGE_LAW]: CHANGE_LAW,
   [CHANGE_CHAOS]: CHANGE_CHAOS,
   [PULL_TOKEN]: PULL_TOKEN,
-  [LOADING]: LOADING
+  [LOADING]: LOADING,
 };
 
 const Puller = () => {
@@ -24,12 +24,12 @@ const Puller = () => {
       case PULLER_ACTIONS.CHANGE_LAW:
         return {
           ...state,
-          lawTokens: Number(action.value)
+          lawTokens: Number(action.value),
         };
       case PULLER_ACTIONS.CHANGE_CHAOS:
         return {
           ...state,
-          chaosTokens: Number(action.value)
+          chaosTokens: Number(action.value),
         };
       case PULLER_ACTIONS.PULL_TOKEN:
         const totalTokenNumber = state.lawTokens + state.chaosTokens;
@@ -38,12 +38,12 @@ const Puller = () => {
         return {
           ...state,
           pulledToken,
-          isLoading: false
+          isLoading: false,
         };
       case PULLER_ACTIONS.LOADING:
         return {
           ...state,
-          isLoading: true
+          isLoading: true,
         };
       default:
         return state;
@@ -54,7 +54,7 @@ const Puller = () => {
     lawTokens: 1,
     chaosTokens: 1,
     pulledToken: "",
-    isLoading: false
+    isLoading: false,
   });
 
   return (
@@ -72,10 +72,10 @@ const Puller = () => {
               min="0"
               max="100"
               value={state.lawTokens}
-              onChange={e => {
+              onChange={(e) => {
                 dispatch({
                   type: PULLER_ACTIONS.CHANGE_LAW,
-                  value: e.target.value
+                  value: e.target.value,
                 });
               }}
             />
@@ -92,10 +92,10 @@ const Puller = () => {
               min="0"
               max="100"
               value={state.chaosTokens}
-              onChange={e => {
+              onChange={(e) => {
                 dispatch({
                   type: PULLER_ACTIONS.CHANGE_CHAOS,
-                  value: e.target.value
+                  value: e.target.value,
                 });
               }}
             />
@@ -108,7 +108,7 @@ const Puller = () => {
           type="button"
           onClick={() => {
             dispatch({ type: PULLER_ACTIONS.LOADING });
-            setTimeout(function() {
+            setTimeout(function () {
               dispatch({ type: PULLER_ACTIONS.PULL_TOKEN });
             }, 500);
           }}

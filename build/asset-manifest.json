@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/dadlands/static/css/main.b7283fff.chunk.css",
+    "main.js": "/dadlands/static/js/main.7dc71875.chunk.js",
+    "main.js.map": "/dadlands/static/js/main.7dc71875.chunk.js.map",
+    "runtime~main.js": "/dadlands/static/js/runtime~main.8a9b9f23.js",
+    "runtime~main.js.map": "/dadlands/static/js/runtime~main.8a9b9f23.js.map",
+    "static/js/2.b02abbaf.chunk.js": "/dadlands/static/js/2.b02abbaf.chunk.js",
+    "static/js/2.b02abbaf.chunk.js.map": "/dadlands/static/js/2.b02abbaf.chunk.js.map",
+    "index.html": "/dadlands/index.html",
+    "precache-manifest.103241132a7621b74235bd5b1f237e4a.js": "/dadlands/precache-manifest.103241132a7621b74235bd5b1f237e4a.js",
+    "service-worker.js": "/dadlands/service-worker.js",
+    "static/css/main.b7283fff.chunk.css.map": "/dadlands/static/css/main.b7283fff.chunk.css.map",
+    "static/media/chaosToken.png": "/dadlands/static/media/chaosToken.ab6f094e.png",
+    "static/media/styles.css": "/dadlands/static/media/desert.1a1acf21.jpg",
+    "static/media/lawToken.png": "/dadlands/static/media/lawToken.5bca5381.png"
+  }
+}
