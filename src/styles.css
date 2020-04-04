@@ -1,0 +1,55 @@
+.App {
+  font-family: sans-serif;
+}
+
+body::after {
+  content: "";
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  background-image: url("../desert.jpg");
+  /* Full height */
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Trade Winds", cursive;
+  font-size: 3rem;
+  margin: 0px;
+}
+
+label {
+  display: block;
+  margin: 8px 0;
+}
+
+input {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+button {
+  font-size: 1.5rem;
+  margin-top: 16px;
+  border-radius: 5px;
+  border: 0;
+  padding: 8px 16px;
+  background-color: #703e1a;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+button:hover {
+  background: #603516;
+  transition: background-color 0.5s;
+}
